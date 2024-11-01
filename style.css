@@ -48,7 +48,7 @@ a:hover {
 }
 /* 橫幅 */
 #banner {
-  background-image: url(/img/banner.jpg);
+  background-image: url(./img/banner.jpg);
   /* background-repeat: no-repeat;讓背景圖片不會重新渲染 */
   background-repeat: no-repeat;
   /* w100p */
@@ -57,7 +57,7 @@ a:hover {
 }
 /* 內容 */
 .content {
-  background-image: url(/img/paper.png);
+  background-image: url(./img/paper.png);
   /* height: 600px; */
 }
 h1 {
@@ -212,7 +212,7 @@ h1 {
 }
 
 footer {
-  background-image: url(/img/paper.png);
+  background-image: url(./img/paper.png);
   height: 150px;
   line-height: 150px;
   text-align: center;
