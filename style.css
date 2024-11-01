@@ -3,20 +3,29 @@
   font-family: 微軟正黑體;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
+
 body {
   /* background: #000; */
 }
+#logo img{
+  width: 250px;
+}
 /* 導覽列 */
+nav{
+  /* position */
+  /* fixed:固定 */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
 #nav {
   display: grid;
   grid-template-columns: 30% 50% 20%;
   width: 800px;
   /* background: #333; */
   margin: 35px auto;
-  /* position */
-  /* fixed:固定 */
-  position: fixed;
 }
 
 a {
@@ -44,7 +53,7 @@ a:hover {
   background-repeat: no-repeat;
   /* w100p */
   width: 100%;
-  height: 1280px;
+  height: 100vh;
 }
 /* 內容 */
 .content {
@@ -102,8 +111,8 @@ h1 {
 .card p {
   height: 160px;
   color: #666;
-  font-weight: 100;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .card hr {
   height: 2px;
@@ -121,6 +130,16 @@ h1 {
   opacity: 1;
   object-position: 2px -130px;
 }
+.card:hover .drink2 {
+  opacity: 1;
+  object-position: 2px -20px;
+}
+
+.card:hover .typhoon {
+  opacity: 1;
+  object-position: 2px -50px;
+}
+
 .card:hover h4 {
   font-size: 20px;
   font-weight: 300;
@@ -157,6 +176,7 @@ h1 {
 #info p{
     text-align-last: left;
     line-height: 2;
+    letter-spacing: 15px;
 }
 
 /* 經營理念 */
@@ -171,4 +191,32 @@ h1 {
 #idea-pic img{
     width: 100%;
     border: 8px solid #fff;
+}
+
+#idea-content{
+  line-height: 3;
+  letter-spacing: 10px;
+}
+
+#idea-content a{
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+#idea-content a:hover{
+  background-color: #333;
+  color: white;
+}
+
+footer {
+  background-image: url(/img/paper.png);
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #555;
 }
